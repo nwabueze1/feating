@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "types";
 
-export const useNavLogoStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useNavLogoStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   navLogo: (props) => ({
     display: "flex",
     alignItems: "center",

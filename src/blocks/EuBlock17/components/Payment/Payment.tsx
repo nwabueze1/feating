@@ -9,7 +9,7 @@ import { CoreCartFields } from "../../../../models";
 import { PaymentProps } from "./types";
 // import { PaymentUI } from "@wazobia-tech/wazcom/dist/core";
 
-export const Payment: FC<PaymentProps> = ({ onSuccess }) => {
+export const Payment: FC<PaymentProps> = ({}) => {
   const { restaurant } = useSelector<EuState, EuState>((store) => store);
   const { colors, fonts } = useBlockSelector<BlockProviderType, BlockProviderType>((store) => store);
   const classes = usePaymentStyles({ colors, fonts });

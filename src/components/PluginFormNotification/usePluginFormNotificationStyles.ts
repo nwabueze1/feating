@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 import { getResponsiveFontSize } from "../../helpers/getResponsiveFontSize";
 
-export const usePluginFormNotificationStyles = makeStyles((theme: Theme) => ({
+export const usePluginFormNotificationStyles = makeStyles((theme: any) => ({
   successTextContainer: {
     textAlign: "center",
     fontFamily: theme.euDesign.font.poppins,

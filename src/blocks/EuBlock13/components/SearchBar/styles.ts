@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "types";
 
-export const useSearchBarStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useSearchBarStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   container: {
     display: "flex",
     boxSizing: "border-box",

@@ -2,13 +2,13 @@ import { CustomThemeProps } from "../../types";
 import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 
-export const useEuBlock14Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock14Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     background: props?.colors?.[400],
 
     [theme.breakpoints.up("md")]: {
       padding: theme.spacing(6, 0),
-    }
+    },
   }),
   container: {
     width: "85%",
@@ -32,7 +32,7 @@ export const useEuBlock14Styles = makeStyles<Theme, CustomThemeProps>((theme: Th
 
       [theme.breakpoints.up("md")]: {
         padding: 0,
-      }
+      },
     },
     "&.layout-3, &.layout-4": {
       flexDirection: "column-reverse",
@@ -64,7 +64,7 @@ export const useEuBlock14Styles = makeStyles<Theme, CustomThemeProps>((theme: Th
         backgroundRepeat: "no-repeat !important",
         minHeight: 600,
         backgroundSize: "cover !important",
-      }
+      },
     },
 
     "&.layout-4, &.layout-5": {

@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 import { CustomThemeProps } from "../../../../types";
 
-export const useCartCardStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useCartCardStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: {
     "& p": {
       margin: 0,
@@ -103,7 +103,7 @@ export const useCartCardStyles = makeStyles<Theme, CustomThemeProps>((theme: The
 
     "& .icon": {
       fontSize: theme.euDesign.typography.fontSize + 6,
-    }
+    },
   },
   quantitySign: {
     cursor: "pointer",
@@ -122,14 +122,14 @@ export const useCartCardStyles = makeStyles<Theme, CustomThemeProps>((theme: The
       display: "block",
     },
   },
-  optionName:{
-    paddingRight:theme.spacing(0.5)
+  optionName: {
+    paddingRight: theme.spacing(0.5),
   },
   dishSpinnerParent: (props) => ({
     display: "inline",
     position: "relative",
     top: 1.5,
     marginLeft: theme.spacing(1.5),
-    color: props?.colors?.[300]
-  })
+    color: props?.colors?.[300],
+  }),
 }));

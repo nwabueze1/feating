@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useEuBlock3Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock3Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     background: props?.colors?.[100],
     padding: theme.spacing(5, 0),
@@ -10,8 +10,8 @@ export const useEuBlock3Styles = makeStyles<Theme, CustomThemeProps>((theme: The
     "& input": {
       "&::placeholder": {
         fontFamily: props?.fonts?.body,
-      }
-    }
+      },
+    },
   }),
   container: {
     width: "85%",
@@ -188,5 +188,5 @@ export const useEuBlock3Styles = makeStyles<Theme, CustomThemeProps>((theme: The
   block3ActiveElement: {
     border: "1px dashed",
     borderColor: theme.euDesign.colors.green_primary,
-},
+  },
 }));

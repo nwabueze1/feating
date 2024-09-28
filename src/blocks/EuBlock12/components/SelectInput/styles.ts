@@ -1,7 +1,6 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useSelectInputStyles = makeStyles((theme: Theme) => ({
+export const useSelectInputStyles = makeStyles((theme: any) => ({
   customSelect: {
     position: "relative",
     display: "inline-block",

@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useButtonStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useButtonStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   button: (props) => {
     return {
       display: "inline-flex",

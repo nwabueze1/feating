@@ -2,11 +2,11 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "types";
 
-export const useCardStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useCardStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: {
     width: "100%",
     overflowWrap: "anywhere",
-    
+
     "&.contained": {
       padding: theme.spacing(2),
       background: (props) => props?.colors?.[900],
@@ -26,8 +26,8 @@ export const useCardStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) 
     objectFit: "cover",
     borderRadius: theme.spacing(0.5),
   },
-  anchorTag:{
-    textDecoration:"none"
+  anchorTag: {
+    textDecoration: "none",
   },
   overlay: {
     background: (props) => `linear-gradient(180.39deg, ${theme.euDesign.shadows[400]} 69.89%, ${props?.colors?.[200]} 99.66%)`,
@@ -79,9 +79,9 @@ export const useCardStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) 
       },
     },
     display: "-webkit-box",
-      "-webkit-line-clamp": 3,
-      "-webkit-box-orient": "vertical",
-      overflow: "hidden",
+    "-webkit-line-clamp": 3,
+    "-webkit-box-orient": "vertical",
+    overflow: "hidden",
   },
   subtitle: {
     margin: theme.spacing(1, 0),

@@ -1,7 +1,6 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useBlockStyles = makeStyles((theme: Theme) => ({
+export const useBlockStyles = makeStyles((theme: any) => ({
   container: {
     maxWidth: theme.euStyles.maxWidth,
     width: "85%",

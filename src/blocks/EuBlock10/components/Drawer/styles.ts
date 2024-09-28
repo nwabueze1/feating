@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "types";
 
-export const useDrawerStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useDrawerStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     position: "fixed",
     top: 0,
@@ -85,6 +85,6 @@ export const useDrawerStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme
     "& .close-icon": {
       fontSize: theme.euDesign.typography.fontSize + 15,
       color: props?.colors?.[200],
-    }
-  })
+    },
+  }),
 }));

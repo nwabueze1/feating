@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useListStyle = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useListStyle = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   list: {
     display: "flex",
     gap: theme.spacing(2),

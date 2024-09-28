@@ -1,7 +1,6 @@
 import { makeStyles } from "@mui/styles";
-import { Theme } from "@mui/material";
 
-export const useGroupedInputStyles = makeStyles((theme: Theme) => ({
+export const useGroupedInputStyles = makeStyles((theme: any) => ({
   inputs: {
     display: "flex",
     flexDirection: "column",

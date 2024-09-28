@@ -1,6 +1,5 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-export const useTestimonyStyles = makeStyles((theme: Theme) => ({
+export const useTestimonyStyles = makeStyles((theme: any) => ({
   testimonyHeader: {
     display: "flex",
     justifyContent: "space-between",

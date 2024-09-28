@@ -1,0 +1,1 @@
+export declare const useTestimonyStyles: (props?: any) => import("@mui/styles").ClassNameMap<"buttonContainer" | "menuContent" | "avatarContainer" | "avatar" | "testimonyHeader" | "titleContainer" | "titleHeading" | "testimonyContent" | "testimonyTitle" | "ratingContainer" | "avatarCardContainer">;

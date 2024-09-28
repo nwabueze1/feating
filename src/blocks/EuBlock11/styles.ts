@@ -2,7 +2,7 @@ import { CustomThemeProps } from "types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useEuBlock11Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock11Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -12,7 +12,7 @@ export const useEuBlock11Styles = makeStyles<Theme, CustomThemeProps>((theme: Th
 
     "&.layout-1,&.layout-2": {
       paddingBottom: theme.spacing(3),
-    }
+    },
   },
   container: (props) => ({
     maxWidth: theme.euStyles.maxWidth,
@@ -111,7 +111,7 @@ export const useEuBlock11Styles = makeStyles<Theme, CustomThemeProps>((theme: Th
 
     "&.layout-3": {
       marginBottom: theme.spacing(3),
-    }
+    },
   },
   imageBackground: {
     height: "55vh",

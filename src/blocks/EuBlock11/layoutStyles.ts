@@ -2,7 +2,7 @@ import { CustomThemeProps } from "types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useLayoutStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useLayoutStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   block: {
     marginTop: theme.spacing(4),
     justifyContent: "start",
@@ -37,7 +37,7 @@ export const useLayoutStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme
       [theme.breakpoints.down("sm")]: {
         marginBottom: theme.spacing(2),
       },
-    }
+    },
   },
   blockOverline: {
     "&.layout-4, &.layout-5": {

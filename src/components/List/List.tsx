@@ -1,12 +1,11 @@
 import { FC } from "react";
 import { useListStyle } from "./styles";
 import clx from "classnames";
-import { ListPropsType } from "./types";
 import { BlockStoreType } from "../../types";
 import { useBlockSelector, createResponsiveImage } from "../../helpers";
 import { decodeText } from "../../helpers/decodeText";
 
-export const List: FC<ListPropsType> = ({ ...props }) => {
+export const List: FC<any> = (props) => {
   const store = useBlockSelector<BlockStoreType, BlockStoreType>((store) => store);
 
   const classes = useListStyle(store);

@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 import { CustomThemeProps } from "../../../../types";
 
-export const usePaymentStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const usePaymentStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     border: "1px solid #FD6F87",
     padding: theme.spacing(4),
@@ -27,7 +27,7 @@ export const usePaymentStyles = makeStyles<Theme, CustomThemeProps>((theme: Them
     marginBottom: theme.spacing(3),
   },
   paymentComponentHeading: {
-    display: "none"
+    display: "none",
   },
   paymentComponentSubheading: {
     display: "none",
@@ -57,5 +57,5 @@ export const usePaymentStyles = makeStyles<Theme, CustomThemeProps>((theme: Them
     color: `${props?.colors?.[500]} !important`,
     fontFamily: props?.fonts?.body,
     padding: `${theme.spacing(2.5, 3)} !important`,
-  })
+  }),
 }));

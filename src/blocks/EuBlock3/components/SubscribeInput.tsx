@@ -1,19 +1,11 @@
 import { useBlock3ComponentStyes } from "./";
 import clx from "classnames";
-import { Button } from "../../../components";
 import { SubscribeInputPropsType } from "./types";
 // import { PlugInForm, PluginFormRef, PluginFormClassNamesPropsType } from "@wazobia-tech/wazcom/dist/io";
-import { useRef, useState } from "react";
-import { useSelector } from "react-redux";
-import { TEuState } from "../../../types";
-import { createApolloClient, notify, useRecordFormSubmission } from "../../../helpers";
 
-export const SubscribeInput = ({ layout, content }: SubscribeInputPropsType) => {
+export const SubscribeInput = ({ layout }: SubscribeInputPropsType) => {
   const classes = useBlock3ComponentStyes();
   // const inputRef = useRef<PluginFormRef>(null);
-  const [loading, setLoading] = useState<boolean>(false);
-  const { gatewayUrl, block_uuid } = useSelector<TEuState, TEuState>((state) => state);
-  const recordFormSubmission = useRecordFormSubmission();
 
   // const classNames: PluginFormClassNamesPropsType = {
   //   textField: {

@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 import { CustomThemeProps } from "../../../../types";
 
-export const useOrderSummaryStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useOrderSummaryStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     border: "1px solid #FD6F87",
     padding: theme.spacing(4),
@@ -41,5 +41,5 @@ export const useOrderSummaryStyles = makeStyles<Theme, CustomThemeProps>((theme:
     "&:hover,&:focus, &:active": {
       borderColor: "unset !important",
     },
-  })
+  }),
 }));

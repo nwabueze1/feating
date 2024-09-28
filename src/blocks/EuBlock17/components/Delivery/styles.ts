@@ -1,14 +1,12 @@
 import { makeStyles } from "@mui/styles";
-import { Theme } from "@mui/material";
 
-export const useDeliveryStyles = makeStyles((theme: Theme) => ({
+export const useDeliveryStyles = makeStyles((theme: any) => ({
   root: {
     display: "flex",
     flexDirection: "column",
     gap: theme.spacing(1),
   },
-  deliveryType: {
-  },
+  deliveryType: {},
   deliveryTypeAccordion: {
     display: "flex",
     justifyContent: "space-between",
@@ -36,7 +34,7 @@ export const useDeliveryStyles = makeStyles((theme: Theme) => ({
 
     "& .description": {
       fontSize: theme.euDesign.typography.fontSize,
-    }
+    },
   },
   deliveryTypeAccordionIcon: {
     fontSize: theme.euDesign.typography.fontSize + 12,
@@ -59,5 +57,5 @@ export const useDeliveryStyles = makeStyles((theme: Theme) => ({
     fontSize: theme.typography.fontSize + 4,
     fontWeight: theme.euDesign.typography.fontWeightSemiBold,
     margin: theme.spacing(0.5, 0, 1.5, 0),
-  }
+  },
 }));

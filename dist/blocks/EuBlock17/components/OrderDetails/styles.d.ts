@@ -1,0 +1,1 @@
+export declare const useOrderDetailsStyles: (props?: any) => import("@mui/styles").ClassNameMap<"heading" | "root" | "details" | "detailsParent" | "detailsInfo" | "detailsBadge" | "detailsNotification">;

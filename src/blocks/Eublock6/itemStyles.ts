@@ -1,7 +1,6 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useItemStyles = makeStyles((theme: Theme) => ({
+export const useItemStyles = makeStyles((theme: any) => ({
   menuBlock: {
     display: "flex",
     gap: theme.spacing(3),

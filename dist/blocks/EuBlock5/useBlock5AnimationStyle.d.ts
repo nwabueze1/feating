@@ -1,0 +1,1 @@
+export declare const useEuBlock5AnimationStyle: (props?: any) => import("@mui/styles").ClassNameMap<"growIn" | "maskCenter" | "maskResizeBottom" | "@keyframes growIn" | "@keyframes maskCenter" | "@keyframes maskResizeBottom">;

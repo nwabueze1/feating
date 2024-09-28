@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useBackgroundStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useBackgroundStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   backgroundImage: {
     position: "absolute",
     right: "-5%",

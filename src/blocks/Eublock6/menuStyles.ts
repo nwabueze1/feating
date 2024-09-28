@@ -2,7 +2,7 @@ import { CustomThemeProps } from "../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useMenuStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useMenuStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   menuContent: (props) => ({
     position: "sticky",
     height: "100%",

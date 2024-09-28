@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useEuBlock9Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock9Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     padding: theme.spacing(6, 0),
     background: props?.colors?.[100],

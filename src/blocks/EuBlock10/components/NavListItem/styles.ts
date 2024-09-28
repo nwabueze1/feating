@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "types";
 
-export const useNavListItemStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useNavListItemStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   navListItem: {
     display: "inline-block",
     order: 0,

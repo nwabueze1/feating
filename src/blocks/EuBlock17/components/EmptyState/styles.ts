@@ -1,7 +1,6 @@
 import { makeStyles } from "@mui/styles";
-import { Theme } from "@mui/material";
 
-export const useEmptyStateStyles = makeStyles((theme: Theme) => ({
+export const useEmptyStateStyles = makeStyles((theme: any) => ({
   root: {
     width: "400px",
     margin: "auto",

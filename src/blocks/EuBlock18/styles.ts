@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useEuBlockStyles18 = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlockStyles18 = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     fontFamily: props?.fonts?.body,
     color: props?.colors?.[100],
@@ -102,7 +102,7 @@ export const useEuBlockStyles18 = makeStyles<Theme, CustomThemeProps>((theme: Th
 
     [theme.breakpoints.up("sm")]: {
       flexWrap: "nowrap",
-    }
+    },
   }),
   addQuantity: (props) => ({
     display: "flex",

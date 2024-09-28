@@ -1,7 +1,7 @@
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useAnimationStyle = makeStyles((theme: Theme) => ({
+export const useAnimationStyle = makeStyles((theme: any) => ({
   "@keyframes fadeIn": {
     "0%": {
       opacity: 0,

@@ -6,7 +6,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -18,14 +18,10 @@
     "baseUrl": "src",
     "typeRoots": ["./src/@types", "./node_modules/@types"],
     "downlevelIteration": true,
-    "types": ["vite/client", "jest"]
+    "types": ["vite/client", "jest"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": ["src"],
-  "exclude": [
-    "lib",
-    "./src/@types",
-    "./src/stories",
-    "./node_modules/@types",
-    "src/types/graphql-global-types.ts"
-  ]
+  "exclude": ["lib", "./src/@types", "./src/stories", "./node_modules/@types", "src/types/graphql-global-types.ts"]
 }

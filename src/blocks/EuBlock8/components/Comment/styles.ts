@@ -1,7 +1,7 @@
 import { CustomThemeProps } from "./../../../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-export const useCommentStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useCommentStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   testament: (props) => ({
     width: "48%",
     minWidth: "48%",

@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useEuBlock4ListStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock4ListStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   blockList: {
     display: "flex",
     flexDirection: "column",
@@ -55,7 +55,7 @@ export const useEuBlock4ListStyles = makeStyles<Theme, CustomThemeProps>((theme:
   imageOverlay: {
     width: "411px",
     height: "397px",
-    background:  (props) => props?.colors?.[400],
+    background: (props) => props?.colors?.[400],
     position: "absolute",
     borderRadius: theme.spacing(12.5, 12.5, 0, 12.5),
     top: "-19%",

@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useBlog2BlockStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useBlog2BlockStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     background: props?.colors?.[100],
     padding: theme.spacing(6, 0),
@@ -10,7 +10,7 @@ export const useBlog2BlockStyles = makeStyles<Theme, CustomThemeProps>((theme: T
 
     "& button": {
       margin: "0 !important",
-    }
+    },
   }),
   container: {
     width: "85%",
@@ -106,7 +106,7 @@ export const useBlog2BlockStyles = makeStyles<Theme, CustomThemeProps>((theme: T
       textSAlign: "justify",
     },
   }),
-  blogImageContainer: (props) => ({  
+  blogImageContainer: (props) => ({
     width: "100%",
 
     "&.layout-3,&.layout-4,&.layout-5": {
@@ -143,10 +143,10 @@ export const useBlog2BlockStyles = makeStyles<Theme, CustomThemeProps>((theme: T
 
     [theme.breakpoints.down("md")]: {
       justifyContent: "center",
-    }
+    },
   },
   block2ActiveElement: {
     border: "1px dashed",
     borderColor: theme.euDesign.colors.green_primary,
-},
+  },
 }));

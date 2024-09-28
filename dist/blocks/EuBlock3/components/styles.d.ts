@@ -1,0 +1,1 @@
+export declare const useBlock3ComponentStyes: (props?: any) => import("@mui/styles").ClassNameMap<"inputContainer" | "footerList" | "footerListItem" | "footerListItemLink" | "footerLogoList" | "footerListHeader" | "socialMediaContainer" | "socialMediaIcon" | "inputWrapper" | "subscribeList" | "subscribeInput" | "subscribeErrorMessage" | "subscribeButton" | "pluginFormContainer">;

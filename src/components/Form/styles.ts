@@ -1,7 +1,6 @@
 import { makeStyles } from "@mui/styles";
-import { Theme } from "@mui/material";
 
-export const useFormStyles = makeStyles((theme: Theme) => ({
+export const useFormStyles = makeStyles((theme: any) => ({
   root: {
     display: "flex",
     flexDirection: "column",

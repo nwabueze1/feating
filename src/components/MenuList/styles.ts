@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useMenuListStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useMenuListStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     height: "350px",
     overflowY: "scroll",

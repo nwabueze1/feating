@@ -1,35 +1,20 @@
-import { useTheme } from "@mui/material";
 // import { FormPallette, PlugInForm } from "@wazobia-tech/wazcom/dist/io";
 import clx from "classnames";
-import { FC, useState } from "react";
-import { useSelector } from "react-redux";
+import { FC } from "react";
 import { useEuBlock12Styles } from ".";
-import { BlockProvider } from "../../BlockProvider";
-import { Button } from "../../components";
-import { createApolloClient, notify, useGetConfiguration, useRecordFormSubmission } from "../../helpers";
+import { useGetConfiguration } from "../../helpers";
 import { useGetColor, useSelectedLayout } from "../../hooks";
-import block12 from "../../mappings/block12";
-import { BlockConfigType, TEuState } from "../../types";
 import { ContactInfo } from "./components";
-import { usePluginFormClassNames } from "./usePluginFormClassNames";
 import { decodeText } from "../../helpers/decodeText";
 
-const { uuid: BLOCK_UUID } = block12;
-
-export const EuBlock12: FC<BlockConfigType> = ({ content, mode = "view", index, activeElement, handleSelect, ...props }) => {
+export const EuBlock12: FC<any> = ({ content, mode = "view", index, activeElement, handleSelect, ...props }) => {
   const { getMappedColor } = useGetColor();
   const getConfiguration = useGetConfiguration();
   const configuration = getConfiguration(props.configuration, "main", getMappedColor);
-  const buttonConfig = getConfiguration(props.configuration, "button", getMappedColor);
   const classes = useEuBlock12Styles(configuration);
   const layout = useSelectedLayout(props.layouts);
-  const [loading, setLoading] = useState(false);
-  const { classNames } = usePluginFormClassNames(configuration);
-  const { gatewayUrl } = useSelector<TEuState, TEuState>((state) => state);
   const renderContactInfo = () => content?.contactInfo.map((info: { type: string; value: string }, index: number) => <ContactInfo subtitle={info.value} type={info.type} key={index} />);
   const key = "blocks." + String(index);
-  const recordFormSubmission = useRecordFormSubmission();
-  const theme = useTheme();
   // const palette: FormPallette = {
   //   colors: {
   //     main: configuration?.colors?.[300],
@@ -49,22 +34,6 @@ export const EuBlock12: FC<BlockConfigType> = ({ content, mode = "view", index, 
   //     },
   //   },
   // };
-
-  const SubmitButton = (
-    <BlockProvider fonts={buttonConfig.fonts} colors={buttonConfig.colors}>
-      <Button disabled={loading} size="large" type="submit" variant="contained" style={{ marginRight: 0, marginTop: 5 }}>
-        {loading ? "Sending..." : "Send"}
-      </Button>
-    </BlockProvider>
-  );
-
-  const handleNotify = (status: "success" | "error" | "warning" | "info", text: string) => {
-    notify(status, text);
-
-    if (status === "success") {
-      recordFormSubmission(content?.form_uuid, BLOCK_UUID);
-    }
-  };
 
   return (
     <section

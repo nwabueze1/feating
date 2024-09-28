@@ -1,9 +1,9 @@
-import { Theme } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-import { CustomThemeProps } from '../../types';
+import { Theme } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import { CustomThemeProps } from "../../types";
 
 /** !!-- Remember to update the function name !! */
-export const useRadioButtonInputStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useRadioButtonInputStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: {
     color: theme.design.colors.waz_dangerColor300,
   },
@@ -22,5 +22,5 @@ export const useRadioButtonInputStyles = makeStyles<Theme, CustomThemeProps>((th
         height: "100%",
       },
     },
-  })
+  }),
 }));

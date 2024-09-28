@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useEuBlock1Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock1Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     background: props?.colors?.[100],
     boxSizing: "border-box",
@@ -175,7 +175,7 @@ export const useEuBlock1Styles = makeStyles<Theme, CustomThemeProps>((theme: The
     maxWidth: "761px",
     margin: theme.spacing(2, 0),
     fontFamily: props?.fonts?.body,
-    
+
     [theme.breakpoints.between("md", "lg")]: {
       fontSize: theme.typography.fontSize + 2,
       lineHeight: "24px",
@@ -189,8 +189,8 @@ export const useEuBlock1Styles = makeStyles<Theme, CustomThemeProps>((theme: The
       marginTop: theme.spacing(2.5),
 
       [theme.breakpoints.down("sm")]: {
-        marginTop: `${theme.spacing(1.5)} !important`,   
-      }
+        marginTop: `${theme.spacing(1.5)} !important`,
+      },
     },
   }),
   buttonContainer: {
@@ -222,7 +222,7 @@ export const useEuBlock1Styles = makeStyles<Theme, CustomThemeProps>((theme: The
     height: 600,
     width: "100%",
     objectFit: "cover",
-   
+
     [theme.breakpoints.between("md", "lg")]: {
       width: "100%",
       ObjectFit: "cover",

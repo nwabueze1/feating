@@ -1,0 +1,25 @@
+export var Blocks;
+(function (Blocks) {
+    Blocks["BLOCK1"] = "eu-block-1";
+    Blocks["BLOCK2"] = "eu-block-2";
+    Blocks["BLOCK3"] = "eu-block-3";
+    Blocks["BLOCK4"] = "eu-block-4";
+    Blocks["BLOCK5"] = "eu-block-5";
+    Blocks["BLOCK6"] = "eu-block-6";
+    Blocks["BLOCK7"] = "eu-block-7";
+    Blocks["BLOCK8"] = "eu-block-8";
+    Blocks["BLOCK9"] = "eu-block-9";
+    Blocks["BLOCK10"] = "eu-block-10";
+    Blocks["BLOCK16"] = "eu-block-16";
+    Blocks["BLOCK14"] = "eu-block-14";
+    Blocks["BLOCK11"] = "eu-block-11";
+    Blocks["BLOCK12"] = "eu-block-12";
+    Blocks["BLOCK13"] = "eu-block-13";
+    Blocks["BLOCK15"] = "eu-block-15";
+    Blocks["BLOCK19"] = "eu-block-19";
+    Blocks["BLOCK17"] = "eu-block-17";
+    Blocks["BLOCK18"] = "eu-block-18";
+    Blocks["BLOCK21"] = "eu-block-21";
+    Blocks["BLOCK20"] = "eu-block-20";
+    Blocks["BLOCK22"] = "eu-block-22";
+})(Blocks || (Blocks = {}));

@@ -2,7 +2,7 @@ import { CustomThemeProps } from "../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useEuBlock7Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock7Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   rootParent: (props) => ({
     background: props?.colors?.[100],
     fontFamily: props?.fonts?.body,

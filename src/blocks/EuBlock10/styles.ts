@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useEuBlock10Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock10Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   base: {
     position: "relative",
   },

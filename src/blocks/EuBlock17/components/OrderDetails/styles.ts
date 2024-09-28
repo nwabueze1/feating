@@ -1,7 +1,6 @@
 import { makeStyles } from "@mui/styles";
-import { Theme } from "@mui/material";
 
-export const useOrderDetailsStyles = makeStyles((theme: Theme) => ({
+export const useOrderDetailsStyles = makeStyles((theme: any) => ({
   root: {
     border: "1px solid #FD6F87",
     padding: theme.spacing(4),

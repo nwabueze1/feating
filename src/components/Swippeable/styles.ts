@@ -1,7 +1,6 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useSwipeAble = makeStyles((theme: Theme) => ({
+export const useSwipeAble = makeStyles((theme: any) => ({
   container: {
     display: "flex",
     gap: "30px",

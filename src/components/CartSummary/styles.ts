@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 import { Theme } from "@mui/material";
 
-export const useCartSummaryStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useCartSummaryStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     border: `1px solid ${props?.colors?.[800]}`,
     borderRadius: "4px",

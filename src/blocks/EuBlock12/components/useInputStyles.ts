@@ -2,7 +2,7 @@ import { lighten, Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../../types";
 
-export const useInputStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useInputStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   inputContainer: {
     width: "100%",
     borderRadius: theme.spacing(0.5),

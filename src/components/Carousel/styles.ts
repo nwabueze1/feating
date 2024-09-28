@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useCarouselStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useCarouselStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   carouselContainer: {
     overflow: "hidden",
     margin: "auto",

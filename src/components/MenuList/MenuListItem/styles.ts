@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useMenuListItem = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useMenuListItem = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   container: (props) => ({
     padding: theme.spacing(2.2, 2),
     width: "auto",

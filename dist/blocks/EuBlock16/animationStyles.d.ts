@@ -1,0 +1,1 @@
+export declare const useEuBlock16AnimationStyles: (props?: any) => import("@mui/styles").ClassNameMap<"base" | "@keyframes mask" | "@keyframes fadeIn" | "@keyframes shrinkIn" | "@keyframes grow" | "@keyframes twistIn">;

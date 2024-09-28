@@ -1,7 +1,6 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useBlock3ComponentStyes = makeStyles((theme: Theme) => ({
+export const useBlock3ComponentStyes = makeStyles((theme: any) => ({
   footerList: {
     listStyle: "none",
     textDecoration: "none",

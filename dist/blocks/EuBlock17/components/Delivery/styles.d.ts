@@ -1,0 +1,1 @@
+export declare const useDeliveryStyles: (props?: any) => import("@mui/styles").ClassNameMap<"root" | "deliveryType" | "deliveryTypeAccordion" | "deliveryTypeAccordionContent" | "deliveryTypeAccordionIcon" | "deliveryTypeAccordionIconActive" | "deliveryForm" | "deliveryFormHeading" | "deliveryFormGroupHeading">;

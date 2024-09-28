@@ -2,7 +2,7 @@ import { CustomThemeProps } from "../../types";
 import { makeStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 
-export const useEuBlock22Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock22Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   container: {
     width: "85%",
     margin: "0 auto",

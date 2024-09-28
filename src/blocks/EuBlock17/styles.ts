@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useEuBlockStyles17 = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlockStyles17 = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     fontFamily: props?.fonts?.body,
     colors: props?.colors?.[200],
@@ -31,7 +31,7 @@ export const useEuBlockStyles17 = makeStyles<Theme, CustomThemeProps>((theme: Th
     [theme.breakpoints.up("lg")]: {
       display: "flex",
       gap: theme.spacing(4),
-    }
+    },
   },
   cartCheckout: {
     width: "100%",
@@ -40,15 +40,15 @@ export const useEuBlockStyles17 = makeStyles<Theme, CustomThemeProps>((theme: Th
     [theme.breakpoints.up("lg")]: {
       width: "55%",
       marginBottom: 0,
-    }
+    },
   },
   cartSidebar: {
     width: "100%",
 
     [theme.breakpoints.up("lg")]: {
       width: "46%",
-    }
-  },  
+    },
+  },
   cartContainerBack: {
     display: "flex",
     alignItems: "center",
@@ -58,12 +58,12 @@ export const useEuBlockStyles17 = makeStyles<Theme, CustomThemeProps>((theme: Th
 
     "& p": {
       fontSize: theme.euDesign.typography.fontSize + 4,
-    }
+    },
   },
   cartLoaderContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     padding: theme.spacing(5),
-  }
+  },
 }));

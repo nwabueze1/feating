@@ -2,7 +2,7 @@ import { CustomThemeProps } from "types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useAvatarCardStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useAvatarCardStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   container: (props) => ({
     padding: theme.spacing(2),
     backgroundColor: props?.colors?.[700],

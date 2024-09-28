@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { CustomThemeProps } from "../../types";
 
-export const useEuBlock4Styles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useEuBlock4Styles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   root: (props) => ({
     background: props?.colors?.[100],
     padding: theme.spacing(4, 0),
@@ -181,5 +181,5 @@ export const useEuBlock4Styles = makeStyles<Theme, CustomThemeProps>((theme: The
   block4ActiveElement: {
     border: "1px dashed",
     borderColor: theme.euDesign.colors.green_primary,
-},
+  },
 }));

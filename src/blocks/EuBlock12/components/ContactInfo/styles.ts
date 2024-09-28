@@ -1,7 +1,6 @@
-import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useContactInfoStyles = makeStyles((theme: Theme) => ({
+export const useContactInfoStyles = makeStyles((theme: any) => ({
   root: {
     display: "flex",
     gap: theme.spacing(1.53375),

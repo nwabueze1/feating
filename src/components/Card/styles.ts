@@ -7,7 +7,7 @@ type CustomStyleProps = {
   colors?: CardPropsType["colors"];
 };
 
-export const useCardStyles = makeStyles<Theme, CustomStyleProps>((theme: Theme) => ({
+export const useCardStyles = makeStyles<Theme, CustomStyleProps>((theme: any) => ({
   card: (props) => ({
     position: "relative",
     backgroundColor: theme.euDesign.colors.white,

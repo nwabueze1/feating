@@ -2,7 +2,7 @@ import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { ImageDisplayPropsType } from "./";
 
-export const useImageDisplayStyles = makeStyles<Theme, ImageDisplayPropsType>((theme: Theme) => ({
+export const useImageDisplayStyles = makeStyles<Theme, ImageDisplayPropsType>((theme: any) => ({
   root: {
     display: "flex",
     gap: "2%",
@@ -60,7 +60,7 @@ export const useImageDisplayStyles = makeStyles<Theme, ImageDisplayPropsType>((t
     backgroundRepeat: "no-repeat !important",
     backgroundSize: "cover !important",
     minHeight: 600,
-    
+
     [theme.breakpoints.down("lg")]: {
       height: "45vh",
     },

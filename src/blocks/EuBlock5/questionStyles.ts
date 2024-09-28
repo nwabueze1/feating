@@ -2,7 +2,7 @@ import { CustomThemeProps } from "./../../types";
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-export const useQuestionStyles = makeStyles<Theme, CustomThemeProps>((theme: Theme) => ({
+export const useQuestionStyles = makeStyles<Theme, CustomThemeProps>((theme: any) => ({
   faqBlock: {
     display: "flex",
     gap: theme.spacing(6.25),

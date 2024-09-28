@@ -1,44 +1,43 @@
-import { Theme } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@mui/styles";
 
-export const useInputStyles = makeStyles((theme: Theme) => ({
+export const useInputStyles = makeStyles((theme: any) => ({
   inputContainer: {
     position: "relative",
-    width: '100%',
-    '& input': {
-      background: 'transparent',
+    width: "100%",
+    "& input": {
+      background: "transparent",
       paddingLeft: theme.spacing(2.5),
-      width: '100%',
-      outline: 'none',
+      width: "100%",
+      outline: "none",
       color: theme.euDesign.colors.black,
       padding: theme.spacing(1.8, 0),
       fontSize: theme.typography.fontSize + 2,
-      [theme.breakpoints.down('lg')]: {
+      [theme.breakpoints.down("lg")]: {
         fontSize: theme.typography.fontSize,
       },
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: theme.typography.fontSize - 2,
       },
       border: `1px solid ${theme.euDesign.colors.light_grey}`,
-      '&.validate': {
+      "&.validate": {
         border: `1px solid ${theme.euDesign.colors.danger}`,
       },
-      '&:focus': {
+      "&:focus": {
         border: `1px solid ${theme.euDesign.colors.light_grey}`,
       },
-      '&.white': {
+      "&.white": {
         border: `1px solid ${theme.euDesign.colors.light_grey}`,
-        '&::placeholder': {
+        "&::placeholder": {
           color: theme.euDesign.colors.white,
         },
       },
-      '&::placeholder': {
+      "&::placeholder": {
         color: theme.euDesign.colors.neutral_100,
         fontSize: theme.typography.fontSize + 2,
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.down("lg")]: {
           fontSize: theme.typography.fontSize,
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down("sm")]: {
           fontSize: theme.typography.fontSize - 2,
         },
       },
