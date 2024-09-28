@@ -1,0 +1,121 @@
+import { Theme } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import { CustomThemeProps } from "types";
+
+export const useNavActionStyles = makeStyles<Theme, CustomThemeProps>((theme) => ({
+  cartButton: (props) => ({
+    display: "inline-flex",
+    padding: theme.spacing(1.5, 2.5),
+    cursor: "pointer",
+    gap: theme.spacing(0.5),
+    alignItems: "center",
+    justifyContent: "center",
+    color: props?.colors?.[100],
+    border: "none",
+    background: props?.colors?.[700],
+    fontSize: theme.euDesign.typography.bodySm,
+    borderRadius: theme.spacing(0.4),
+    fontFamily: props?.fonts?.body,
+    order: 3,
+    transition: "background .3s",
+    textDecoration: "none",
+    "&:hover": {
+      background: props?.colors?.[800],
+      cursor: "pointer",
+    },
+    [theme.breakpoints.down(1200)]: {
+      padding: theme.spacing(1.1, 2),
+      fontSize: theme.euDesign.typography.bodySm - 4,
+    },
+    [theme.breakpoints.down("md")]: {
+      background: "none",
+      color: props?.colors?.[200],
+      fontSize: theme.euDesign.typography.bodySm - 2,
+      "&.layout-2,&.layout-3,&.layout-4,&.layout-5": {
+        padding: theme.spacing(1),
+      },
+      "&.layout-3": {
+        display: "none",
+        "&.drawer": {
+          cursor: "pointer",
+          gap: theme.spacing(0.5),
+          alignItems: "center",
+          justifyContent: "center",
+          color: props?.colors?.[100],
+          border: "none",
+          background: props?.colors?.[700],
+          borderRadius: theme.spacing(0.4),
+          fontFamily: props?.fonts?.body,
+          display: "inline-flex",
+          padding: theme.spacing(1.1, 2),
+          fontSize: theme.euDesign.typography.bodySm - 4,
+        },
+      },
+    },
+  }),
+  cartIconContainer: {
+    position: "relative",
+    top: 1.5,
+    display: "block",
+  },
+  badge: (props) => ({
+    background: props?.colors?.[300],
+    height: "75%",
+    width: "90%",
+    borderRadius: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: props?.colors?.[100],
+    position: "absolute",
+    fontSize: theme.typography.fontSize - 4,
+    top: "-51%",
+    left: "64%",
+    [theme.breakpoints.down(1200)]: {
+      height: "65%",
+      width: "82%",
+      fontSize: theme.typography.fontSize - 6,
+      top: "-20%",
+      left: "60%",
+    },
+  }),
+  toggleButton: {
+    position: "relative",
+    top: 0.5,
+    padding: 0,
+    margin: 0,
+    background: "transparent",
+    outline: "none",
+    border: 0,
+    cursor: "pointer",
+    display: "none",
+    [theme.breakpoints.down(1200)]: {
+      display: "inline-block",
+      order: 4,
+    },
+  },
+  toggleIcon: {
+    fontSize: theme.typography.fontSize * 2,
+  },
+  iconContainer: {
+    display: "flex",
+    gap: theme.spacing(1),
+  },
+  overlay: {
+    width: "100vw",
+    height: 0,
+    backgroundColor: (props) => props?.colors?.[1000],
+    position: "absolute",
+    zIndex: 10,
+    opacity: 0,
+    transition: "opacity .3s ease",
+    "&.active": {
+      height: "95vh",
+      opacity: 0.6,
+      zIndex: 5,
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: 0,
+    },
+  },
+}));
