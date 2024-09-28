@@ -10,7 +10,7 @@ import { useGetColor } from "../../hooks/useGetColor";
 import { useGetConfiguration } from "../../helpers";
 import { Button } from "../../components";
 import block7 from "../../mappings/block7";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 const { uuid: BLOCK_UUID } = block7;
 

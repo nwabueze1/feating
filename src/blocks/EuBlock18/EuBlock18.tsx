@@ -12,7 +12,7 @@ import { SelectionProps } from "./types";
 import { OptionConfigCard } from "./components";
 import clx from "classnames";
 import { RelatedDishes } from "./components";
-import { calculateCartItemOptionsTotal } from "@wazobia-tech/wazcom/dist/utilities";
+// import { calculateCartItemOptionsTotal } from "@wazobia-tech/wazcom/dist/utilities";
 import { useRecordMenuItemView } from "../../helpers";
 import block18 from "../../mappings/block18";
 
@@ -49,12 +49,12 @@ export const EuBlock18: FC<BlockConfigType> = ({ content, configuration, layouts
     recordMenuItemView(menuItemData?.uuid);
   }, []);
 
-  const calculateDishTotal = useCallback(() => {
-    const stringifiedOptions = JSON.stringify(selectionOption);
-    const result = (menuItemData?.price + calculateCartItemOptionsTotal(stringifiedOptions)) * quantity;
+  // const calculateDishTotal = useCallback(() => {
+  //   const stringifiedOptions = JSON.stringify(selectionOption);
+  //   // const result = (menuItemData?.price + calculateCartItemOptionsTotal(stringifiedOptions)) * quantity;
 
-    return result.toFixed(2);
-  }, [quantity, selectionOption]);
+  //   return result.toFixed(2);
+  // }, [quantity, selectionOption]);
 
   const handleAddQuantity = (add: boolean) => {
     setQuantity(add ? quantity + 1 : quantity > 1 ? quantity - 1 : 1);
@@ -118,7 +118,7 @@ export const EuBlock18: FC<BlockConfigType> = ({ content, configuration, layouts
             <p className={classes.textSubHeader}>{menuItemData?.menuCategory?.title}</p>
             <p className={classes.textPrice}>
               <span className={classes.textCurrency}>{getCurrency(menuItemData?.menu?.restaurant?.bank_info?.currency ?? "")}</span>
-              <span>{calculateDishTotal()}</span>
+              {/* <span>{calculateDishTotal()}</span> */}
             </p>
             <div className={classes.descriptionContainer}>
               <p className={classes.descriptionHeader}>Description</p>

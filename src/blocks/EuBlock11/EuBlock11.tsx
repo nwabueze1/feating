@@ -7,7 +7,7 @@ import { BlockLayouts, getCurrency, useGetConfiguration } from "../../helpers";
 import { useGetColor, useSelectedLayout } from "../../hooks";
 import block11 from "../../mappings/block11";
 import { BlockConfigType } from "../../types";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 const { uuid: BLOCK_UUID } = block11;
 

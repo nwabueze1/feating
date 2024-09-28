@@ -8,7 +8,7 @@ import { useSelectedLayout } from "../../hooks/useSelectedLayout";
 import { useGetColor } from "../../hooks/useGetColor";
 import { useGetConfiguration, createResponsiveImage } from "../../helpers";
 import { BlockProvider } from "../../BlockProvider";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock1: FC<BlockConfigType> = ({ content, mode = "view", index, activeElement, handleSelect, configuration, screenSize, ...props }) => {
   const activeLayout = useSelectedLayout(props.layouts) as string;

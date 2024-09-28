@@ -96,7 +96,7 @@ export const EuBlock3: FC<BlockConfigType> = ({ content, configuration, mode = "
           </article>
           <div className={classes.divider}></div>
           <div>
-            <p className={clx(classes.copyright, layout)}>&copy; Eat-Up {new Date().getFullYear()}. Made with Hivedeck</p>
+            <p className={clx(classes.copyright, layout)}>&copy; Eat-Up {new Date().getFullYear()}. Made with love by Fidelis Okeke</p>
           </div>
         </div>
       </div>

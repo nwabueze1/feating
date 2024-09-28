@@ -4,7 +4,7 @@ import { BlockConfigType } from "types";
 import { CommentPropsType, useCommentStyles } from "./";
 import clx from "classnames";
 import { createImageSrcset, imageSizes } from "../../../../helpers";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../../../helpers/decodeText";
 
 export const Comment: FC<CommentPropsType> = ({ isLayout4or5, layout, ...comment }) => {
   const store = useSelector<BlockConfigType, BlockConfigType>((state) => state);

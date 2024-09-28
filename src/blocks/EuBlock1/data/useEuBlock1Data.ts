@@ -38,7 +38,7 @@ export const useEuBlock1Data = () => {
         { variant: "secondary", text: "Learn more", url: "/" },
       ],
       image: {
-        src: "https://images.pexels.com/photos/24374036/pexels-photo-24374036.jpeg",
+        src: "https://sytbuildr.s3.eu-west-2.amazonaws.com/eatup-template/food720.png",
         alternative_text: "image of desert",
       },
     },

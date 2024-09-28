@@ -1,5 +1,5 @@
 import { useTheme } from "@mui/material";
-import { FormPallette, PlugInForm } from "@wazobia-tech/wazcom/dist/io";
+// import { FormPallette, PlugInForm } from "@wazobia-tech/wazcom/dist/io";
 import clx from "classnames";
 import { FC, useState } from "react";
 import { useSelector } from "react-redux";
@@ -12,7 +12,7 @@ import block12 from "../../mappings/block12";
 import { BlockConfigType, TEuState } from "../../types";
 import { ContactInfo } from "./components";
 import { usePluginFormClassNames } from "./usePluginFormClassNames";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 const { uuid: BLOCK_UUID } = block12;
 
@@ -30,25 +30,25 @@ export const EuBlock12: FC<BlockConfigType> = ({ content, mode = "view", index, 
   const key = "blocks." + String(index);
   const recordFormSubmission = useRecordFormSubmission();
   const theme = useTheme();
-  const palette: FormPallette = {
-    colors: {
-      main: configuration?.colors?.[300],
-      hover: configuration?.colors?.[300],
-      error: theme?.euDesign?.colors?.danger,
-    },
-    typography: {
-      input: {
-        fontFamily: configuration?.fonts?.body?.concat?.("!important"),
-        fontSize: theme?.typography?.fontSize,
-        color: configuration?.colors?.[400],
-      },
-      label: {
-        fontFamily: configuration?.fonts?.body?.concat?.("!important"),
-        fontSize: theme?.typography?.fontSize,
-        color: configuration?.colors?.[400],
-      },
-    },
-  };
+  // const palette: FormPallette = {
+  //   colors: {
+  //     main: configuration?.colors?.[300],
+  //     hover: configuration?.colors?.[300],
+  //     error: theme?.euDesign?.colors?.danger,
+  //   },
+  //   typography: {
+  //     input: {
+  //       fontFamily: configuration?.fonts?.body?.concat?.("!important"),
+  //       fontSize: theme?.typography?.fontSize,
+  //       color: configuration?.colors?.[400],
+  //     },
+  //     label: {
+  //       fontFamily: configuration?.fonts?.body?.concat?.("!important"),
+  //       fontSize: theme?.typography?.fontSize,
+  //       color: configuration?.colors?.[400],
+  //     },
+  //   },
+  // };
 
   const SubmitButton = (
     <BlockProvider fonts={buttonConfig.fonts} colors={buttonConfig.colors}>
@@ -80,7 +80,7 @@ export const EuBlock12: FC<BlockConfigType> = ({ content, mode = "view", index, 
               {decodeText(content?.text?.main)} <span className={classes.headingColored}>{decodeText(content?.text?.coloredMain)}</span>
             </h2>
             <p className={classes.subtext}>{content?.text?.subtext}</p>
-            <PlugInForm
+            {/* <PlugInForm
               apolloClient={{ client: gatewayUrl ? (createApolloClient(gatewayUrl) as any) : undefined }}
               form={content?.form}
               form_uuid={content?.form_uuid}
@@ -90,7 +90,7 @@ export const EuBlock12: FC<BlockConfigType> = ({ content, mode = "view", index, 
               submitButton={SubmitButton}
               onNotify={handleNotify}
               palette={palette}
-            />
+            /> */}
             <div className={classes.contactInfoContainer}>{renderContactInfo()}</div>
           </div>
           <div className={classes.blockContent}>

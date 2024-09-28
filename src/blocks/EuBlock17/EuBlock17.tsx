@@ -11,7 +11,7 @@ import { useFormik } from "formik";
 import { IoArrowBack } from "react-icons/io5";
 import Cookies from "universal-cookie";
 import { CircularProgress } from "@mui/material";
-import { useVerifyGlobalPayments } from "@wazobia-tech/wazcom/dist/core/PaymentUI/globalPayment";
+// import { useVerifyGlobalPayments } from "@wazobia-tech/wazcom/dist/core/PaymentUI/globalPayment";
 
 const { uuid: BLOCK_UUID } = block17;
 
@@ -41,7 +41,7 @@ export const EuBlock17: FC<BlockConfigType> = ({ content, configuration }) => {
   const site_uuid = cart?.restaurant?.site?.uuid as string;
   const isCartEmpty = !cart?.cartItems || cart?.cartItems?.length === 0;
   const cartRef = useRef<any>();
-  const verifyGlobalPayments = useVerifyGlobalPayments();
+  // const verifyGlobalPayments = useVerifyGlobalPayments();
 
   useEffect(() => {
     cartRef?.current?.scrollIntoView();
@@ -52,26 +52,26 @@ export const EuBlock17: FC<BlockConfigType> = ({ content, configuration }) => {
     }
   }, []);
 
-  useEffect(() => {
-    handleOrderConfirmation();
-  }, []);
+  // useEffect(() => {
+  //   handleOrderConfirmation();
+  // }, []);
 
-  const handleOrderConfirmation = async () => {
-    const queryParams = new URLSearchParams(window.location.search);
-    if (queryParams.get("hivedeck_payment_type") && cartCookie[site_uuid])
-      await verifyGlobalPayments(
-        BLOCK_UUID,
-        () => {
-          setLoading(false);
-          setActiveStep(4);
-        },
-        () => {
-          window.history.pushState({}, "", "/cart");
-          setLoading(false);
-        }
-      );
-    else setLoading(false);
-  };
+  // const handleOrderConfirmation = async () => {
+  //   const queryParams = new URLSearchParams(window.location.search);
+  //   if (queryParams.get("hivedeck_payment_type") && cartCookie[site_uuid])
+  //     await verifyGlobalPayments(
+  //       BLOCK_UUID,
+  //       () => {
+  //         setLoading(false);
+  //         setActiveStep(4);
+  //       },
+  //       () => {
+  //         window.history.pushState({}, "", "/cart");
+  //         setLoading(false);
+  //       }
+  //     );
+  //   else setLoading(false);
+  // };
 
   const handleStepProceed = () => {
     if (activeStep > 2) return setActiveStep(1);

@@ -11,7 +11,7 @@ import { useSelectedLayout } from "../../hooks";
 import clx from "classnames";
 import { MenuListType } from "../../components/MenuList/type";
 import block6 from "../../mappings/block6";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 const { uuid: BLOCK_UUID } = block6;
 

@@ -5,7 +5,7 @@ import { useGetColor, useSelectedLayout } from "../../hooks";
 import clx from "classnames";
 import { useGetConfiguration } from "../../helpers";
 import { useMediaQuery, useTheme } from "@mui/material";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock16: FC<BlockConfigType> = ({ content, mode = "view", index, activeElement, handleSelect, ...props }) => {
   const { getMappedColor } = useGetColor();

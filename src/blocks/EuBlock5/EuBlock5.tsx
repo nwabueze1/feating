@@ -8,7 +8,7 @@ import { useGetColor } from "../../hooks/useGetColor";
 import { useGetConfiguration, createImageSrcset, imageSizes } from "../../helpers";
 import { useQuestionStyles } from "./questionStyles";
 import { useBackgroundStyles } from "./backgroundStyles";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock5 = ({ content, configuration, mode = "view", index, activeElement, handleSelect, ...props }: BlockConfigType) => {
   const { getMappedColor } = useGetColor();

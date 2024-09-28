@@ -13,7 +13,7 @@ import { useTestimonyStyles } from "./testimonyStyles";
 import { useBlockStyles } from "./blockStyles";
 import { Comment } from "./components";
 import { BlockProvider } from "../../BlockProvider";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock8 = ({ layouts, content, mode = "view", index, screenSize, activeElement, handleSelect, configuration }: BlockConfigType) => {
   const horizontalViewRef = useRef<HTMLDivElement>(null);

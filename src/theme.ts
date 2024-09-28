@@ -1,5 +1,4 @@
 import { Breakpoint, Breakpoints, createTheme, Theme as MuiTheme } from "@mui/material/styles";
-import { theme as wazTheme } from "@wazobia-tech/wazcom/dist/theme";
 
 type ExtendedBreakPoints = Breakpoints & {
   up: (key: Breakpoint | "xxl" | "xxxl") => string;
@@ -153,7 +152,6 @@ export const theme: any = {
     },
     getShadow: (opacity: number) => `rgba(0, 0, 0, ${opacity})`,
   },
-  ...wazTheme,
 };
 
 export default createTheme(theme);

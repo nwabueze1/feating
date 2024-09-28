@@ -8,7 +8,7 @@ import { BlockProvider } from "../../BlockProvider";
 import { SwipeAble, SwipeAbleRef } from "../../components";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useMediaQuery, useTheme } from "@mui/material";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock15: FC<BlockConfigType> = ({ content, mode = "view", index, activeElement, handleSelect, ...props }) => {
   const layout = useSelectedLayout(props.layouts);

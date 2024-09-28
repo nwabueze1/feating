@@ -10,7 +10,7 @@ import { mapMenuCategory } from ".";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { ClientMenuFields } from "./initialMenuState";
 import block13 from "../../mappings/block13";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 const { uuid: BLOCK_UUID } = block13;
 
 export const EuBlock13: FC<BlockConfigType> = ({ content, mode = "view", index, activeElement, handleSelect, ...props }) => {

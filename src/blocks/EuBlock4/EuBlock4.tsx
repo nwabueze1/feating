@@ -11,7 +11,7 @@ import { useEuBlock4ListStyles } from "./blockListStyles";
 import { useGetColor } from "../../hooks/useGetColor";
 import { useGetConfiguration, createImageSrcset, imageSizes, createResponsiveImage } from "../../helpers";
 import { BlockProvider } from "../../BlockProvider";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock4: FC<BlockConfigType> = ({ content, configuration, mode = "view", index, activeElement, handleSelect, ...props }) => {
   const { getMappedColor } = useGetColor();

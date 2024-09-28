@@ -4,7 +4,7 @@ import clx from "classnames";
 import { ListPropsType } from "./types";
 import { BlockStoreType } from "../../types";
 import { useBlockSelector, createResponsiveImage } from "../../helpers";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const List: FC<ListPropsType> = ({ ...props }) => {
   const store = useBlockSelector<BlockStoreType, BlockStoreType>((store) => store);

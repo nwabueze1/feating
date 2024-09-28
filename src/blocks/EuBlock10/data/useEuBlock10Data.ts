@@ -23,11 +23,11 @@ export const useEuBlock10Data = () => {
         },
         {
           text: "Wish lists",
-          url: "/wish-list",
+          url: "#",
         },
         {
           text: "Contact us",
-          url: "/contact-us",
+          url: "#",
         },
         {
           text: "Blog",

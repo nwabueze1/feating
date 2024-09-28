@@ -10,7 +10,7 @@ import { useGetColor } from "../../hooks/useGetColor";
 import block9 from "../../mappings/block9";
 import { CoreMenuItemFields } from "../../models";
 import { useEuBlock9Styles } from "./styles";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 const { uuid: BLOCK_UUID } = block9;
 
 export const EuBlock9: FC<BlockConfigType> = ({ configuration, mode = "view", index, activeElement, handleSelect, content, ...props }) => {
@@ -45,7 +45,7 @@ export const EuBlock9: FC<BlockConfigType> = ({ configuration, mode = "view", in
               title: "View",
               href: item?.slug ?? "",
             }}
-          /> 
+          />
         </div>
       )
     );

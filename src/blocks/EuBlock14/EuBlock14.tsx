@@ -4,7 +4,7 @@ import { useEuBlock14Styles } from ".";
 import { useGetColor, useSelectedLayout } from "../../hooks";
 import clx from "classnames";
 import { BlockLayouts, useGetConfiguration } from "../../helpers";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 export const EuBlock14: FC<BlockConfigType> = ({ content, mode = "view", index, activeElement, handleSelect, ...props }) => {
   const { getMappedColor } = useGetColor();

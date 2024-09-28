@@ -9,7 +9,7 @@ import { useGetColor } from "../../hooks/useGetColor";
 import { useGetConfiguration, createResponsiveImage } from "../../helpers";
 import { BlockProvider } from "../../BlockProvider";
 import block2 from "../../mappings/block2";
-import { decodeText } from "@wazobia-tech/wazcom/dist/utilities";
+import { decodeText } from "../../helpers/decodeText";
 
 const { uuid: BLOCK_UUID } = block2;
 

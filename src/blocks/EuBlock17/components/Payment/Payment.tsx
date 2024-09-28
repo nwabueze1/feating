@@ -7,7 +7,7 @@ import { getCurrency } from "../../../../helpers";
 import { calculateCartSubTotal } from "../../helper";
 import { CoreCartFields } from "../../../../models";
 import { PaymentProps } from "./types";
-import { PaymentUI } from "@wazobia-tech/wazcom/dist/core";
+// import { PaymentUI } from "@wazobia-tech/wazcom/dist/core";
 
 export const Payment: FC<PaymentProps> = ({ onSuccess }) => {
   const { restaurant } = useSelector<EuState, EuState>((store) => store);
@@ -29,7 +29,7 @@ export const Payment: FC<PaymentProps> = ({ onSuccess }) => {
         {total}
       </p>
 
-      <PaymentUI
+      {/* <PaymentUI
         displayButton={true}
         onSuccess={onSuccess}
         classNames={{
@@ -38,7 +38,7 @@ export const Payment: FC<PaymentProps> = ({ onSuccess }) => {
           paymentOption: classes.paymentComponentOption,
           button: classes.paymentComponentButton,
         }}
-      />
+      /> */}
     </div>
   );
 };
