@@ -7,7 +7,7 @@ export const usePluginFormNotification = () => {
     message: null,
     message_type: null,
   });
-  let timeout: NodeJS.Timeout;
+  let timeout: any;
 
   const handleNotify = (message_type: "success" | "error", message: string | null) => {
     if (message_type === "error") {

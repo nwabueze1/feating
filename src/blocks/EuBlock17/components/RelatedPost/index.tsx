@@ -8,6 +8,7 @@ import { SwipeAble, SwipeAbleRef, Button } from "../.././../../components";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import clx from "classnames";
 import { BlockProvider } from "../../../../BlockProvider";
+import { useBlockSelector } from "../../../../helpers";
 
 export const RelatedPostThumbnail: FC<RelatedPostThumbnailProps> = ({ header, content, layout, buttonConfiguration, ...props }) => {
   const configuration = useBlockSelector<BlockStoreType, BlockStoreType>((store) => store);

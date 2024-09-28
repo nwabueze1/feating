@@ -77,8 +77,8 @@ export const EuBlock17: FC<BlockConfigType> = ({ content, configuration }) => {
     if (activeStep > 2) return setActiveStep(1);
     if (activeStep === 1) return setActiveStep(activeStep + 1);
 
-    if (deliveryPickupFormik.values?.is_active) deliveryPickupFormik.handleSubmit();
-    else if (deliveryDispatchFormik.values?.is_active) deliveryDispatchFormik.handleSubmit();
+    if ((deliveryPickupFormik as any).values?.is_active) deliveryPickupFormik.handleSubmit();
+    else if ((deliveryDispatchFormik as any).values?.is_active) deliveryDispatchFormik.handleSubmit();
   };
 
   const handleBack = () => {

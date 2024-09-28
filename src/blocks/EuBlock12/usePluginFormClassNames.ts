@@ -1,11 +1,10 @@
 import { CustomThemeProps } from "../../types";
 import { useInputStyles } from "./components";
-import { PluginFormClassNamesPropsType } from "@wazobia-tech/wazcom/dist/io";
 
 export const usePluginFormClassNames = (prop: CustomThemeProps) => {
   const inputClasses = useInputStyles(prop);
 
-  const classNames: PluginFormClassNamesPropsType = {
+  const classNames = {
     textField: {
       inputContainer: inputClasses.inputContainer,
       input: inputClasses.textField,
